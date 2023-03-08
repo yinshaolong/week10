@@ -49,3 +49,10 @@ for (let i = 0; i < fruits.length; i++) {
 for (let fruit of fruits){
     console.log(fruit)
 }
+
+let person = {
+    name: ["John", "Doe"],
+    age: 30
+}
+console.log("my name is " + person.name[0] + " " + person.name[1])
+console.log(`my name is ${person.name[0]} ${person.name[1]}`)
