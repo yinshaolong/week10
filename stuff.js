@@ -34,5 +34,11 @@ alert("Hello " + user)
 let fruits = ["apple", "banana", "cherry"]
 fruits.push("orange")
 console.log(fruits)
-fruits.pop("orange")
+fruits.pop()
+fruits[fruits.length] = "kiwi"
+console.log(fruits)
+
+fruits.unshift("mango")
+console.log(fruits)
+fruits.shift("mango")
 console.log(fruits)
