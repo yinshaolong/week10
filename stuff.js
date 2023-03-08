@@ -65,3 +65,35 @@ for (key in person){
 for (key in fruits){
     console.log(key) //prints indices of fruits because fruits is a list
 }
+
+let student1 = {
+    ID: "A00022",
+    GPA: 3.0,
+    program: "CIT"
+};
+
+let student2 = {
+    ID: "A01000",
+    GPA: 3.1,
+    program: "CST"
+};
+
+let student3 = {
+    ID: "A00114",
+    GPA: 3.2,
+    program: "CIT"
+};
+let students = [student1, student2, student3];
+let high_GPA_students = 0
+for (student of students){
+    if (student.GPA > 3.0 && student.program === "CIT"){
+        high_GPA_students++
+    }
+}
+console.log(high_GPA_students)
+for (student of students){
+    if (student.GPA > 3.0 || student.program === "CIT"){
+        high_GPA_students++
+    }
+}
+console.log(high_GPA_students)
