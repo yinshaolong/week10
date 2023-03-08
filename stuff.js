@@ -30,3 +30,9 @@ do{
     user = prompt("what is your name?")
 }while(!isNaN(user))
 alert("Hello " + user)
+
+let fruits = ["apple", "banana", "cherry"]
+fruits.push("orange")
+console.log(fruits)
+fruits.pop("orange")
+console.log(fruits)
