@@ -56,3 +56,12 @@ let person = {
 }
 console.log("my name is " + person.name[0] + " " + person.name[1])
 console.log(`my name is ${person.name[0]} ${person.name[1]}`)
+
+for (key in person){
+    console.log(key)
+    console.log(person[key])
+    console.log(person.key) //doesnt work because there is no key in person
+}
+for (key in fruits){
+    console.log(key) //prints indices of fruits because fruits is a list
+}
