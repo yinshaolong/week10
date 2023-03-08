@@ -42,3 +42,10 @@ fruits.unshift("mango")
 console.log(fruits)
 fruits.shift("mango")
 console.log(fruits)
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
+}
+for (let fruit of fruits){
+    console.log(fruit)
+}
